@@ -1,1 +1,4 @@
-pytest==7.0.0  # example, adjust to your needs
+# requirements.txt
+numpy      # Example dependency, remove if not used
+matplotlib # Example dependency, remove if not used
+pytest     # Optional, if you want to use pytest for tests
