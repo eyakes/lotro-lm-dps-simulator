@@ -1,4 +1,6 @@
 # src/abilities/fireball.py
+import random
+
 class Fireball:
     def __init__(self, crit_multiplier=1.5):
         self.name = "Fireball"
@@ -8,7 +10,7 @@ class Fireball:
         self.crit_multiplier = crit_multiplier
 
     def use(self, stats):
-        # Apply crit chance
-        if stats.crit > random.random():
+        # Apply crit chance using dictionary access for 'crit'
+        if stats['crit'] > random.random():  # stats['crit'] instead of stats.crit
             return self.damage * self.crit_multiplier
         return self.damage
