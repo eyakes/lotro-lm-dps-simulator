@@ -1,9 +1,14 @@
+# src/abilities/fireball.py
 class Fireball:
-    def __init__(self):
+    def __init__(self, crit_multiplier=1.5):
         self.name = "Fireball"
         self.damage = 100
         self.cost = 20  # Mana or resource cost
         self.cooldown = 3  # Seconds
-        
-    def __repr__(self):
-        return self.name
+        self.crit_multiplier = crit_multiplier
+
+    def use(self, stats):
+        # Apply crit chance
+        if stats.crit > random.random():
+            return self.damage * self.crit_multiplier
+        return self.damage
