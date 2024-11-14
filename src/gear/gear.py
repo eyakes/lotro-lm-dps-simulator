@@ -7,4 +7,7 @@ class GearItem:
     def apply_stats(self, stats):
         """Apply the gear item stat boosts to the current stats."""
         for stat, value in self.stat_boosts.items():
-            stats[stat] += value
+            if stat in stats:
+                stats[stat] += value
+            else:
+                stats[stat] = value  # Add the stat if it doesn't exist
