@@ -5,15 +5,22 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src'
 # src/main.py
 from abilities.fireball import Fireball
 from gear.gear import GearItem
+from gear_sets import GearSet
 from stats.stats import Stats
 from simulation.dps_simulator import DPS_Simulator
 
 # Create a stats object
-stats = Stats(crit=0.2, might=100)
+stats = {'crit': 10, 'might': 5, 'fate': 8}
 
 # Create gear items and apply them to stats
-gear_item = GearItem(name="Crit Ring", stat_boosts={'crit': 0.1})
-gear_item.apply_to_stats(stats)
+gear1 = GearItem('Helm of Might', {'crit': 5, 'might': 3})
+gear2 = GearItem('Boots of Speed', {'fate': 2, 'might': 1})
+gear3 = GearItem('Ring of Power', {'crit': 3})
+
+# Apply stats from each Gear Item
+gear1.apply_stats(stats)
+gear2.apply_stats(stats)
+gear3.apply_stats(stats)
 
 # Create abilities
 fireball = Fireball()
