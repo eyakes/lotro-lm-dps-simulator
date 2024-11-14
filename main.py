@@ -6,11 +6,11 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src'
 sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/gear')))  # Include gear directory
 
 # src/main.py
-from abilities.fireball import Fireball
+from fireball import Fireball
 from gear import GearItem
 from gear_sets import GearSet
-from stats.stats import Stats
-from simulation.dps_simulator import DPS_Simulator
+from stats import Stats
+from dps_simulator import DPS_Simulator
 
 # Create a stats object
 stats = {'crit': 10, 'might': 5, 'fate': 8}
