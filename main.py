@@ -8,7 +8,7 @@ sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/
 # src/main.py
 from abilities.fireball import Fireball
 from gear.gear import GearItem
-from gear_sets import GearSet
+from gear.gear_sets import GearSet
 from stats.stats import Stats
 from simulation.dps_simulator import DPS_Simulator
 
