@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src'
 sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/data')))
 sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/gear')))
 sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/abilities')))
-sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/gstats')))
+sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/stats')))
 sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/rotations')))
 sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/simulation')))
 sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src/api')))
