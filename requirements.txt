@@ -1,4 +1,2 @@
-# requirements.txt
-numpy      # Example dependency, remove if not used
-matplotlib # Example dependency, remove if not used
-pytest     # Optional, if you want to use pytest for tests
+# requirements.txt (simplified)
+pytest  # If you're using pytest for tests, otherwise remove this line
